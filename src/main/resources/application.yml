@@ -1,15 +1,15 @@
 spring:
   datasource:
-    url: jdbc:postgresql://${PGHOST:localhost}:${PGPORT:5432}/${PGDATABASE:parkingdb}
-    username: ${PGUSER:parking}
-    password: ${PGPASSWORD:parking}
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: false
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
     properties:
       hibernate:
         format_sql: true
