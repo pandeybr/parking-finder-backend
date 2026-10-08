@@ -1,0 +1,15 @@
+{
+  "info": {
+    "name": "Parking Finder MVP",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Nearby Parking",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/parking/nearby?latitude=18.5204&longitude=73.8567&radius=5000"
+      }
+    }
+  ]
+}
